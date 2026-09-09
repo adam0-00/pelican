@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP majeurs</title>
+    
+    <!-- Favicons :-->
+    <link rel="icon" type="image/png" sizes="16x16" href="../theme/logo/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../theme/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="../theme/logo/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../theme/logo/favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../theme/logo/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../theme/logo/favicon-512x512.png">
+    <link rel="shortcut icon" href="../theme/logo/favicon.ico">
+
+    <!-- IMPORTS DES BIBLIOTHEQUES (CSS, FONTS, ICONS) : -->
+    
+    <!-- Bootstrap CSS : --> 
+    <link rel="stylesheet" href="../theme/vendor/bootstrap/css/bootstrap.min.css">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="../theme/vendor/bootstrap-icons/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../theme/vendor/fontawesome/css/all.min.css">
+
+    
+    <!-- STYLES CSS PERSONNEL : -->   
+    <link rel="stylesheet" href="../theme/css/custom.css">
+
+</head>
+
+<body class="m-0 p-0">
+    <!-- INCLUSION DU HEADER : -->
+
+    <!-- -------- -->
+    <!-- HEADER : -->
+    <!-- -------- -->
+
+    <header class="container-fluid py-2 background-header">
+        <div class="container">
+            <div class="row">
+                <!-- Logo : -->
+                <div class="col-md-4 m-0 p-0 align-content-center text-center">
+                    <a href="../" title="Page d'accueil" class="navbar-brand">
+                        <img src="../theme/logo/logo_PBS-teal.png" alt="logo du portfolio" style="height: 80px;">
+                    </a>
+                </div>
+
+                <div class="col-8 m-0 p-0 align-content-center text-center d-none d-md-block">
+                    <!-- Titre principal : -->
+                    <h1 class="m-0 p-0">Portfolio BTS SIO SLAM</h1>
+
+                    <!-- Titre secondaire : -->
+                    <p class="m-0 p-0">
+                        <i>Mon parcours de formation</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVBAR : -->
+    <div class="container-fluid m-0 p-0 sticky-top bg-dark shadow">
+        <nav class="navbar navbar-expand-md sticky-top">
+            <div class="container ms-2 ps-1 mx-lg-auto px-lg-0">            
+
+                <!-- Bouton développement menu en mode collapsé : -->
+                <div class="me-2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <!-- Eléments de navigation : -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav-underline ms-4 ms-md-0 mb-md-0 mt-4 mt-md-0 fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link py-0" title="Page d'accueil du portfolio" href="../index">
+                                <i class="bi bi-house d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                                Accueil
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link py-0" title="Découvrez mon parcours scolaire et professionnel." href="../pages/parcours" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-mortarboard d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                                Mon parcours
+                            </a>
+                            <ul class="dropdown-menu bg-dark-subtle">
+                                <li><a class="dropdown-item" href="../pages/parcours-scolaire">Parcours scolaire</a></li>
+                                <li><a class="dropdown-item" href="../pages/bts-sio">Le BTS SIO</a></li>
+                            </ul> 
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link py-0 active" title="Accédez aux projets et TP réalisés pendant ma formation et à mes projets personnels." href="../pages/realisations" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-check2-square d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                                Réalisations
+                            </a>
+                            <ul class="dropdown-menu bg-dark-subtle">
+                                <li><a class="dropdown-item active" href="../pages/tp-majeurs">TP majeurs</a></li>
+                                <li><a class="dropdown-item" href="../pages/stage-sio1">Stage de 1ère année</a></li>
+                                <li><a class="dropdown-item" href="../pages/stage-sio2">Stage de 2e année</a></li>
+                                <li><a class="dropdown-item" href="../pages/projets-scolaires">Projets scolaires</a></li>
+                                <li><a class="dropdown-item" href="../pages/projets-personnels">Projets personnels</a></li>
+                                <li><a class="dropdown-item" href="../pages/certifications-complementaires">Certifications complémentaires</a></li>
+                            </ul> 
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link py-0" title="Consultez les articles de veille technologique que j’ai suivis durant cette année." href="../ma-veille" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-broadcast-pin d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                                Veille techno.
+                            </a>
+                            <ul class="dropdown-menu bg-dark-subtle">
+                                <li><a class="dropdown-item" href="../ma-veille">Ma veille technologique</a></li>
+                                <li><a class="dropdown-item" href="../archives">Archive des articles</a></li>
+                                <li><a class="dropdown-item" href="../categories">Liste des catégories</a></li>
+                                <li><a class="dropdown-item" href="../authors">Liste des auteurs</a></li>
+                                <li><a class="dropdown-item" href="../tags">Liste des mots clés</a></li>
+                            </ul> 
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link py-0" title="Présentation de mon engagement étudiant." href="../pages/engagement-etudiant">
+                                <i class="bi bi-people-fill d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                                Engagement
+                            </a>
+                        </li>
+                    </ul>
+                </div>            
+            </div>
+        </nav>     
+    </div>
+
+    <!-- CONTENU PRINCIPAL : -->
+    <main class="container my-5 p-3 min-vh-100">
+        
+        <header class="border-bottom pb-3 mb-4">
+            <h1 class="fw-bold">Présentation des travaux pratiques et mini-projets</h1>
+            <p class="text-muted">Retrouvez ici la synthèse des TP majeurs réalisés dans le cadre du BTS SIO option SLAM (Solutions Logicielles et Applications Métiers).</p>
+        </header>
+
+        <!-- SECTIONS PREMIÈRE ANNÉE -->
+        <section class="mb-5">
+            <h2 class="text-primary border-bottom border-2 pb-2 mb-4">
+                <i class="bi bi-1-circle me-2"></i>Première année de BTS SIO
+            </h2>
+
+            <div class="row g-4">
+                <!-- TP 1 SIO1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-secondary">Algorithmique & C#</span>
+                                <small class="text-muted"><i class="bi bi-calendar3"></i> Semestre 1</small>
+                            </div>
+                            <h5 class="card-title fw-bold">Gestion d'une Médiathèque</h5>
+                            <p class="card-text text-secondary flex-grow-1">
+                                Conception d'une application console orientée objet permettant de gérer les emprunts, retours et recherches de documents au sein d'un catalogue.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge text-bg-outline border border-secondary text-dark">C#</span>
+                                <span class="badge text-bg-outline border border-secondary text-dark">POO</span>
+                                <span class="badge text-bg-outline border border-secondary text-dark">Git</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary btn-sm mt-auto"><i class="bi bi-file-earmark-pdf me-1"></i>Voir la fiche TP</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TP 2 SIO1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-primary">Base de Données</span>
+                                <small class="text-muted"><i class="bi bi-calendar3"></i> Semestre 1</small>
+                            </div>
+                            <h5 class="card-title fw-bold">Modélisation BDD SQL</h5>
+                            <p class="card-text text-secondary flex-grow-1">
+                                Analyse des besoins, création du Modèle Conceptuel des Données (MCD) et écriture du script SQL de création et d'insertion (LDD/LMD).
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge text-bg-outline border border-secondary text-dark">MySQL</span>
+                                <span class="badge text-bg-outline border border-secondary text-dark">MCD/MLD</span>
+                                <span class="badge text-bg-outline border border-secondary text-dark">phpMyAdmin</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary btn-sm mt-auto"><i class="bi bi-file-earmark-pdf me-1"></i>Voir la fiche TP</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TP 3 SIO1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success">Développement Web</span>
+                                <small class="text-muted"><i class="bi bi-calendar3"></i> Semestre 2</small>
+                            </div>
+                            <h5 class="card-title fw-bold">Site Web Dynamique en PHP</h5>
+                            <p class="card-text text-secondary flex-grow-1">
+                                Développer un portail web dynamique avec espace d'authentification utilisateur et gestion CRUD complète reliée à une base de données MySQL.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge text-bg-outline border border-secondary text-dark">PHP</span>
+                                <span class="badge text-bg-outline border border-secondary text-dark">HTML/CSS</span>
+                                <span class="badge text-bg-outline border border-secondary text-dark">Bootstrap</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary btn-sm mt-auto"><i class="bi bi-file-earmark-pdf me-1"></i>Voir la fiche TP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTIONS SECONDE ANNÉE -->
+        <section class="mb-5">
+            <h2 class="text-primary border-bottom border-2 pb-2 mb-4">
+                <i class="bi bi-2-circle me-2"></i>Seconde année de BTS SIO
+            </h2>
+
+            <div class="row g-4">
+                <!-- TP 1 SIO2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning text-dark">Framework Web</span>
+                                <small class="text-muted"><i class="bi bi-calendar3"></i> Semestre 3</small>
+                            </div>
+                            <h5 class="card-title fw-bold">Application Web MVC</h5>
+                            <p class="card-text text-secondary flex-grow-1">
+                                Structuration d'une application professionnelle basée sur l'architecture MVC (Modèle-Vue-Contrôleur) intégrant un système de composants et la gestion d'API.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge text-bg-outline border border-secondary text-dark">Symfony / Laravel</span>
+                                <span class="badge text-bg-outline border border-secondary text-dark">MVC</span>
+                                <span class="badge text-bg-outline border border-secondary text-dark">ORM Doctrine</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary btn-sm mt-auto"><i class="bi bi-file-earmark-pdf me-1"></i>Voir la fiche TP</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TP 2 SIO2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-info text-dark">Application Mobile</span>
+                                <small class="text-muted"><i class="bi bi-calendar3"></i> Semestre 3</small>
+                            </div>
+                            <h5 class="card-title fw-bold">Application Mobile Native / Hybride</h5>
+                            <p class="card-text text-secondary flex-grow-1">
+                                Développement d'une application mobile multiplateforme consommant une API REST distante pour l'affichage de données en temps réel.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge text-bg-outline border border-secondary text-dark">Flutter / Java</span>
+                                <span class="badge text-bg-outline border border-secondary text-dark">API REST</span>
+                                <span class="badge text-bg-outline border border-secondary text-dark">JSON</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary btn-sm mt-auto"><i class="bi bi-file-earmark-pdf me-1"></i>Voir la fiche TP</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TP 3 SIO2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-danger">Cybersécurité & Tests</span>
+                                <small class="text-muted"><i class="bi bi-calendar3"></i> Semestre 4</small>
+                            </div>
+                            <h5 class="card-title fw-bold">Audit & Sécurisation</h5>
+                            <p class="card-text text-secondary flex-grow-1">
+                                Mise en place de tests unitaires, correction de failles de sécurité courantes (injections SQL, XSS) et mise en œuvre des bonnes pratiques de hachage.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge text-bg-outline border border-secondary text-dark">PHPUnit / NUnit</span>
+                                <span class="badge text-bg-outline border border-secondary text-dark">OWASP</span>
+                                <span class="badge text-bg-outline border border-secondary text-dark">Bcrypt</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary btn-sm mt-auto"><i class="bi bi-file-earmark-pdf me-1"></i>Voir la fiche TP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- INCLUSION DU FOOTER : -->
+    <footer class="text-center mt-4 mb-0 bg-dark text-light py-3">
+        <small>&copy; 2026 - Portfolio BTS SIO</small>
+    </footer>
+
+    <script src="../theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../theme/js/custom.js"></script>
+</body>
+</html>
