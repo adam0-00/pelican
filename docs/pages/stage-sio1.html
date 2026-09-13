@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stage SIO1</title>
+    <title>Stage SIO1 - Mairie de Moissy-Cramayel</title>
     
     <!-- Favicons :-->
     <link rel="icon" type="image/png" sizes="16x16" href="../theme/logo/favicon-16x16.png">
@@ -27,176 +26,315 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../theme/vendor/fontawesome/css/all.min.css">
 
-    
     <!-- STYLES CSS PERSONNEL : -->   
     <link rel="stylesheet" href="../theme/css/custom.css">
 
 </head>
 
 <body class="m-0 p-0">
-    <!-- INCLUSION DU HEADER : -->
+    <!-- -------- -->
+    <!-- HEADER : -->
+    <!-- -------- -->
 
-<!-- -------- -->
-<!-- HEADER : -->
-<!-- -------- -->
+    <header class="container-fluid py-2 background-header">
+        <div class="container">
+            <div class="row">
+                <!-- Logo : -->
+                <div class="col-md-4 m-0 p-0 align-content-center text-center">
+                    <a href="../" title="Page d'accueil" class="navbar-brand">
+                        <img src="../theme/logo/logo_PBS-teal.png" alt="logo du portfolio" style="height: 80px;">
+                    </a>
+                </div>
 
+                <div class="col-8 m-0 p-0 align-content-center text-center d-none d-md-block">
+                    <!-- Titre principal : -->
+                    <h1 class="m-0 p-0">Portfolio BTS SIO SLAM</h1>
 
-<header class="container-fluid py-2 background-header">
-
-<div class="container">
-    <div class="row">
-        <!-- Logo : -->
-        <div class="col-md-4 m-0 p-0 align-content-center text-center">
-            <a href="../" title="Page d'accueil" class="navbar-brand">
-                <img src="../theme/logo/logo_PBS-teal.png" alt="logo du portfolio" style="height: 80px;">
-            </a>
-        </div>
-
-        <div class="col-8 m-0 p-0 align-content-center text-center d-none d-md-block">
-            <!-- Titre principal : -->
-            <h1 class="m-0 p-0 ">Portfolio BTS SIO SLAM</h1>
-
-
-            <!-- Titre secondaire : -->
-            <p class="m-0 p-0">
-                <i>Mon parcours de formation</i>
-            </p>
-
-        </div>
-    </div>
-
-</div>
-    
-</header>
-
-
-<!-- NAVBAR : -->
-<div class="container-fluid m-0 p-0 sticky-top bg-dark shadow">
-
-
-    <nav class="navbar navbar-expand-md sticky-top">
-        <div class="container ms-2 ps-1 mx-lg-auto px-lg-0">            
-
-            <!-- Bouton dévellopement menu en mode collapsé : -->
-            <div class="me-2">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <!-- Titre secondaire : -->
+                    <p class="m-0 p-0">
+                        <i>Mon parcours de formation</i>
+                    </p>
+                </div>
             </div>
+        </div>
+    </header>
 
-            <!-- Eléments de navigation : -->
-            <div class="collapse navbar-collapse" id="navbarNav">
+    <!-- NAVBAR : -->
+    <div class="container-fluid m-0 p-0 sticky-top bg-dark shadow">
+        <nav class="navbar navbar-expand-md sticky-top">
+            <div class="container ms-2 ps-1 mx-lg-auto px-lg-0">            
 
-                <ul class="navbar-nav nav-underline ms-4 ms-md-0  mb-md-0 mt-4 mt-md-0 fw-bold">
-                        
-                        
-                        <li class="nav-item ">
-                            <a  class="nav-link py-0 "
-                                title="Page d'accueil du portefolio"                                
-                                href="../index"
-                            >
-                            <i  class="bi bi-house d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                <!-- Bouton développement menu en mode collapsé : -->
+                <div class="me-2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <!-- Eléments de navigation : -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav-underline ms-4 ms-md-0 mb-md-0 mt-4 mt-md-0 fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link py-0" title="Page d'accueil du portfolio" href="../index">
+                                <i class="bi bi-house d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
                                 Accueil
                             </a>
-                            
                         </li>
                         
-                        
-                        <li class="nav-item  dropdown ">
-                            <a  class="nav-link py-0 "
-                                title="Découvrez mon parcours scolaire et professionnel."                                
-                                href="../pages/parcours"
- data-bs-toggle="dropdown" aria-expanded="false"                             >
-                            <i  class="bi bi-mortarboard d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link py-0" title="Découvrez mon parcours scolaire et professionnel." href="../pages/parcours" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-mortarboard d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
                                 Mon parcours
                             </a>
-                            
-                                <ul class="dropdown-menu bg-dark-subtle">
-                                        <li><a class="dropdown-item " href="../pages/parcours-scolaire">Parcours scolaire</a></li>
-                                        <li><a class="dropdown-item " href="../pages/bts-sio">Le BTS SIO</a></li>
-                                </ul> 
+                            <ul class="dropdown-menu bg-dark-subtle">
+                                <li><a class="dropdown-item" href="../pages/parcours-scolaire">Parcours scolaire</a></li>
+                                <li><a class="dropdown-item" href="../pages/bts-sio">Le BTS SIO</a></li>
+                            </ul> 
                         </li>
                         
-                        
-                        <li class="nav-item  dropdown ">
-                            <a  class="nav-link py-0  active "
-                                title="Accédez aux projets et TP réalisés pendant ma formation et à mes projets personnels."                                
-                                href="../pages/realisations"
- data-bs-toggle="dropdown" aria-expanded="false"                             >
-                            <i  class="bi bi-check2-square d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link py-0 active" title="Accédez aux projets et TP réalisés pendant ma formation et à mes projets personnels." href="../pages/realisations" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-check2-square d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
                                 Réalisations
                             </a>
-                            
-                                <ul class="dropdown-menu bg-dark-subtle">
-                                        <li><a class="dropdown-item " href="../pages/tp-majeurs">TP majeurs</a></li>
-                                        <li><a class="dropdown-item  active " href="../pages/stage-sio1">Stage de 1ère année</a></li>
-                                        <li><a class="dropdown-item " href="../pages/stage-sio2">Stage de 2e année</a></li>
-                                        <li><a class="dropdown-item " href="../pages/projets-scolaires">Projets scolaires</a></li>
-                                        <li><a class="dropdown-item " href="../pages/projets-personnels">Projets personnels</a></li>
-                                        <li><a class="dropdown-item " href="../pages/certifications-complementaires">Certifications complémentaires</a></li>
-                                </ul> 
+                            <ul class="dropdown-menu bg-dark-subtle">
+                                <li><a class="dropdown-item" href="../pages/tp-majeurs">TP majeurs</a></li>
+                                <li><a class="dropdown-item active" href="../pages/stage-sio1">Stage de 1ère année</a></li>
+                                <li><a class="dropdown-item" href="../pages/stage-sio2">Stage de 2e année</a></li>
+                                <li><a class="dropdown-item" href="../pages/projets-scolaires">Projets scolaires</a></li>
+                                <li><a class="dropdown-item" href="../pages/projets-personnels">Projets personnels</a></li>
+                                <li><a class="dropdown-item" href="../pages/certifications-complementaires">Certifications complémentaires</a></li>
+                            </ul> 
                         </li>
                         
-                        
-                        <li class="nav-item  dropdown ">
-                            <a  class="nav-link py-0 "
-                                title="Consultez les articles de veille technologique que j’ai suivis durant cette année."                                
-                                href="../ma-veille"
- data-bs-toggle="dropdown" aria-expanded="false"                             >
-                            <i  class="bi bi-broadcast-pin d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link py-0" title="Consultez les articles de veille technologique que j’ai suivis durant cette année." href="../ma-veille" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-broadcast-pin d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
                                 Veille techno.
                             </a>
-                            
-                                <ul class="dropdown-menu bg-dark-subtle">
-                                        <li><a class="dropdown-item " href="../ma-veille">Ma veille technologique</a></li>
-                                        <li><a class="dropdown-item " href="../archives">Archive des articles</a></li>
-                                        <li><a class="dropdown-item " href="../categories">Liste des catégories</a></li>
-                                        <li><a class="dropdown-item " href="../authors">Liste des auteurs</a></li>
-                                        <li><a class="dropdown-item " href="../tags">Liste des mots clés</a></li>
-                                </ul> 
+                            <ul class="dropdown-menu bg-dark-subtle">
+                                <li><a class="dropdown-item" href="../ma-veille">Ma veille technologique</a></li>
+                                <li><a class="dropdown-item" href="../archives">Archive des articles</a></li>
+                                <li><a class="dropdown-item" href="../categories">Liste des catégories</a></li>
+                                <li><a class="dropdown-item" href="../authors">Liste des auteurs</a></li>
+                                <li><a class="dropdown-item" href="../tags">Liste des mots clés</a></li>
+                            </ul> 
                         </li>
                         
-                        
-                        <li class="nav-item ">
-                            <a  class="nav-link py-0 "
-                                title="Présention de mon engagement étudiant."                                
-                                href="../pages/engagement-etudiant"
-                            >
-                            <i  class="bi bi-people-fill d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                        <li class="nav-item">
+                            <a class="nav-link py-0" title="Présentation de mon engagement étudiant." href="../pages/engagement-etudiant">
+                                <i class="bi bi-people-fill d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
                                 Engagement
                             </a>
-                            
                         </li>
-                </ul>
+                    </ul>
+                </div>            
+            </div>
+        </nav>      
+    </div>
 
-            </div>            
+    <!-- CONTENU PRINCIPAL : -->
+    <main class="container my-5 p-3 min-vh-100">
+        
+        <!-- HEADER DE PAGE -->
+        <header class="border-bottom pb-3 mb-4">
+            <h1 class="fw-bold"><i class="bi bi-briefcase me-2 text-primary"></i>Stage de 1ère Année – BTS SIO</h1>
+            <p class="text-muted">Synthèse du stage en immersion professionnelle au sein du Service Informatique de la Ville de Moissy-Cramayel.</p>
+        </header>
+
+        <!-- FICHE DESCRIPTIVE -->
+        <div class="card bg-light border-0 shadow-sm mb-5">
+            <div class="card-body p-4">
+                <h4 class="card-title fw-bold text-primary mb-3"><i class="bi bi-file-earmark-text me-2"></i>Fiche descriptive du stage</h4>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <p class="mb-1 text-muted"><strong>Organisme d'accueil :</strong></p>
+                        <p class="fw-semibold text-dark"><i class="bi bi-building me-1"></i> Mairie de Moissy-Cramayel</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="mb-1 text-muted"><strong>Service :</strong></p>
+                        <p class="fw-semibold text-dark"><i class="bi bi-cpu me-1"></i> Service Informatique Municipal</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="mb-1 text-muted"><strong>Période du stage :</strong></p>
+                        <p class="fw-semibold text-dark"><i class="bi bi-calendar-event me-1"></i> Du 18 Mai au 28 Juin 2026</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>     
-</div>
-    <main class="container mt-5 p-0 min-vh-100">
-        <!-- BLOCK POUR L'INSERTION DU CONTENU : -->
 
-  <!-- <h1>Stage SIO1</h1> -->
-  <blockquote>
-<p><strong><u>FICHE DESCRIPTIVE :</u></strong></p>
-<p><u><strong>Dates du stage :</strong></u></p>
-<ul>
-<li><strong>Date début :</strong> XX/06/2025</li>
-<li><strong>Date fin :</strong> XX/06/2025</li>
-</ul>
-<p><strong>Entreprise :</strong> Nom de l'entreprise</p>
-</blockquote>
-<h1>Présentation de l'entreprise/société :</h1>
-<h1>Missions &amp; tâches réalisés :</h1>
-    
+        <!-- PRÉSENTATION DE LA STRUCTURE -->
+        <section class="mb-5">
+            <h3 class="text-primary border-bottom border-2 pb-2 mb-3">
+                <i class="bi bi-info-circle me-2"></i>Présentation de l'entreprise & du service
+            </h3>
+            <p class="text-secondary leading-relaxed">
+                Le <strong>Service Informatique de la Ville de Moissy-Cramayel</strong> assure la gestion, la maintenance et le déploiement de l'ensemble des infrastructures informatiques et télécoms de la commune. Le périmètre d'intervention couvre l'Hôtel de Ville ainsi que l'intégralité des sites municipaux satellites :
+            </p>
+            <div class="row g-2 mb-3">
+                <div class="col-md-4">
+                    <div class="p-2 border rounded bg-white text-secondary"><i class="bi bi-check-circle-fill text-success me-2"></i>Écoles primaires & maternelles</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-2 border rounded bg-white text-secondary"><i class="bi bi-check-circle-fill text-success me-2"></i>Médiathèque & Cinéma municipal</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-2 border rounded bg-white text-secondary"><i class="bi bi-check-circle-fill text-success me-2"></i>Locaux administratifs & Police municipale</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MISSIONS & TÂCHES RÉALISÉES -->
+        <section class="mb-5">
+            <h3 class="text-primary border-bottom border-2 pb-2 mb-4">
+                <i class="bi bi-kanban me-2"></i>Missions & Tâches réalisées
+            </h3>
+
+            <div class="row g-4">
+                
+                <!-- MISSION 1 -->
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary text-white rounded-circle p-2 me-3 d-flex align-content-center justify-content-center" style="width: 40px; height: 40px;">
+                                    <i class="bi bi-tablet"></i>
+                                </div>
+                                <h5 class="card-title fw-bold mb-0">Déploiement MDM & Flotte mobile</h5>
+                            </div>
+                            <p class="card-text text-secondary small">
+                                Suite aux élections municipales de mars 2026, préparation et attribution de tablettes tactiles de fonction pour les nouveaux élus municipaux.
+                            </p>
+                            <ul class="small text-secondary ps-3">
+                                <li>Configuration et enrôlement des tablettes commandées au sein de la solution <strong>MDM</strong> de la mairie.</li>
+                                <li>Optimisation de l'environnement système pour un usage professionnel sécurisé.</li>
+                                <li>Inventaire complet sous <strong>Lansweeper</strong> (adresses IP, factures d'achat, identité du destinataire, suivi des connexions et géolocalisation).</li>
+                                <li>Configuration d'alertes en cas d'incident matériel ou réseau.</li>
+                                <li>Assemblage des kits équipés (pochettes renforcées, coques de protection et chargeurs).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MISSION 2 -->
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary text-white rounded-circle p-2 me-3 d-flex align-content-center justify-content-center" style="width: 40px; height: 40px;">
+                                    <i class="bi bi-activity"></i>
+                                </div>
+                                <h5 class="card-title fw-bold mb-0">Supervision d'Infrastructures (PRTG & SNMP)</h5>
+                            </div>
+                            <p class="card-text text-secondary small">
+                                Mettre en place la métrologie et la supervision en temps réel des salles serveurs de la ville afin d'anticiper les pannes physiques et matérielles.
+                            </p>
+                            <ul class="small text-secondary ps-3">
+                                <li>Configuration de capteurs <strong>SNMP</strong> reliés à la plateforme de supervision <strong>PRTG Network Monitor</strong>.</li>
+                                <li>Utilisation de scripts et requêtes SQL pour définir les seuils d'alerte critiques (température ambiante et humidité des salles serveurs).</li>
+                                <li>Mise en place de sondes de surveillance de l'utilisation de la mémoire RAM et du processeur (CPU) pour éviter les saturations système.</li>
+                                <li>Conception de tableaux de bord synthétiques et de graphiques de variation de données.</li>
+                                <li>Création d'une arborescence structurée pour classifier l'ensemble des équipements par groupes métiers.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MISSION 3 -->
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary text-white rounded-circle p-2 me-3 d-flex align-content-center justify-content-center" style="width: 40px; height: 40px;">
+                                    <i class="bi bi-telephone-outbound"></i>
+                                </div>
+                                <h5 class="card-title fw-bold mb-0">Équipement d'un nouvel établissement scolaire</h5>
+                            </div>
+                            <p class="card-text text-secondary small">
+                                Aménagement et mise en service des équipements informatiques et télécoms lors de l'ouverture d'une nouvelle école de la ville.
+                            </p>
+                            <ul class="small text-secondary ps-3">
+                                <li>Installation, brassage et configuration du parc d'ordinateurs (PC) et d'imprimantes réseau.</li>
+                                <li><strong>Projet prioritaire :</strong> Déploiement en urgence de la flotte de téléphonie IP pour garantir la joignabilité de l'établissement et l'accès aux numéros de secours.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MISSION 4 -->
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary text-white rounded-circle p-2 me-3 d-flex align-content-center justify-content-center" style="width: 40px; height: 40px;">
+                                    <i class="bi bi-hdd-network"></i>
+                                </div>
+                                <h5 class="card-title fw-bold mb-0">Maintenance Réseau & Interventions sur site</h5>
+                            </div>
+                            <p class="card-text text-secondary small">
+                                Remplacement et reconfigurations d'équipements réseau d'infrastructure et de périphériques au sein des bâtiments municipaux.
+                            </p>
+                            <ul class="small text-secondary ps-3">
+                                <li>Remplacement d'urgence de l'imprimante réseau défectueuse du cinéma municipal et raccordement au serveur d'impression.</li>
+                                <li>Configuration d'un switch réseau <strong>Zyxel</strong> de seconde main : réinitialisation usine (factory reset), attribution de la plage IP réseau et raccordement aux équipements de la Mairie.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MISSION 5 -->
+                <div class="col-12">
+                    <div class="card shadow-sm border-0 bg-light">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-headset fs-4 text-primary me-2"></i>
+                                <h5 class="card-title fw-bold mb-0">Support aux Utilisateurs & Gestion du Ticketing</h5>
+                            </div>
+                            <p class="card-text text-secondary small mb-2">
+                                Prise en charge quotidienne des tickets d'assistance technique émis par le personnel communal via la plateforme de ticketing <strong>Lansweeper</strong> :
+                            </p>
+                            <div class="row g-2">
+                                <div class="col-md-4">
+                                    <span class="badge text-bg-white border text-dark w-100 p-2 text-start"><i class="bi bi-tools text-warning me-2"></i>Dépannage matériel et système</span>
+                                </div>
+                                <div class="col-md-4">
+                                    <span class="badge text-bg-white border text-dark w-100 p-2 text-start"><i class="bi bi-box-seam text-info me-2"></i>Déplacement de postes informatiques</span>
+                                </div>
+                                <div class="col-md-4">
+                                    <span class="badge text-bg-white border text-dark w-100 p-2 text-start"><i class="bi bi-arrow-repeat text-success me-2"></i>Remplacement d'équipements défaillants</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ENVIRONNEMENT TECHNIQUE -->
+        <section class="mb-5">
+            <h3 class="text-primary border-bottom border-2 pb-2 mb-3">
+                <i class="bi bi-tools me-2"></i>Environnement Technique & Outils
+            </h3>
+            <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-secondary p-2"><i class="bi bi-shield-lock me-1"></i> MDM (Mobile Device Management)</span>
+                <span class="badge bg-secondary p-2"><i class="bi bi-search me-1"></i> Lansweeper (Inventaire & Ticketing)</span>
+                <span class="badge bg-secondary p-2"><i class="bi bi-diagram-3 me-1"></i> PRTG Network Monitor</span>
+                <span class="badge bg-secondary p-2"><i class="bi bi-broadcast me-1"></i> Protocole SNMP</span>
+                <span class="badge bg-secondary p-2"><i class="bi bi-database me-1"></i> SQL</span>
+                <span class="badge bg-secondary p-2"><i class="bi bi-router me-1"></i> Switchs Zyxel</span>
+                <span class="badge bg-secondary p-2"><i class="bi bi-telephone me-1"></i> Téléphonie IP</span>
+                <span class="badge bg-secondary p-2"><i class="bi bi-printer me-1"></i> Serveurs d'impression</span>
+            </div>
+        </section>
+
     </main>
 
     <!-- INCLUSION DU FOOTER : -->
+    <footer class="text-center mt-4 mb-0 bg-dark text-light py-3">
+        <small>&copy; 2026 - Portfolio BTS SIO</small>
+    </footer>
 
-
-<footer class="text-center mt-4 mb-0 bg-dark text-light">
-    <small>&copy; 2026 - Portfolio BTS SIO</small>
-</footer>
     <script src="../theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../theme/js/custom.js"></script>
 </body>
