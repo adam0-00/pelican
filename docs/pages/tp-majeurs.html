@@ -26,15 +26,12 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../theme/vendor/fontawesome/css/all.min.css">
 
-    
     <!-- STYLES CSS PERSONNEL : -->   
     <link rel="stylesheet" href="../theme/css/custom.css">
 
 </head>
 
 <body class="m-0 p-0">
-    <!-- INCLUSION DU HEADER : -->
-
     <!-- -------- -->
     <!-- HEADER : -->
     <!-- -------- -->
@@ -133,7 +130,7 @@
                     </ul>
                 </div>            
             </div>
-        </nav>     
+        </nav>      
     </div>
 
     <!-- CONTENU PRINCIPAL : -->
@@ -141,156 +138,102 @@
         
         <header class="border-bottom pb-3 mb-4">
             <h1 class="fw-bold">Présentation des travaux pratiques et mini-projets</h1>
-            <p class="text-muted">Retrouvez ici la synthèse des TP majeurs réalisés dans le cadre du BTS SIO option SLAM (Solutions Logicielles et Applications Métiers).</p>
+            <p class="text-muted">Retrouvez ici la synthèse des projets majeurs réalisés dans le cadre du BTS SIO option SLAM (Solutions Logicielles et Applications Métiers).</p>
         </header>
 
-        <!-- SECTIONS PREMIÈRE ANNÉE -->
+        <!-- SECTION DES PROJETS -->
         <section class="mb-5">
             <h2 class="text-primary border-bottom border-2 pb-2 mb-4">
-                <i class="bi bi-1-circle me-2"></i>Première année de BTS SIO
+                <i class="bi bi-code-slash me-2"></i>Projets d'applications web
             </h2>
 
             <div class="row g-4">
-                <!-- TP 1 SIO1 -->
-                <div class="col-md-6 col-lg-4">
+                
+                <!-- PROJET 1 : HÔTEL CHAMBORD -->
+                <div class="col-lg-6">
                     <div class="card h-100 shadow-sm border-0 bg-light">
                         <div class="card-body d-flex flex-column">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <span class="badge bg-secondary">Algorithmique & C#</span>
-                                <small class="text-muted"><i class="bi bi-calendar3"></i> Semestre 1</small>
+                                <span class="badge bg-primary"><i class="bi bi-building me-1"></i> Application Web & BDD</span>
+                                <small class="text-muted"><i class="bi bi-folder-check"></i> Projet 1</small>
                             </div>
-                            <h5 class="card-title fw-bold">Gestion d'une Médiathèque</h5>
-                            <p class="card-text text-secondary flex-grow-1">
-                                Conception d'une application console orientée objet permettant de gérer les emprunts, retours et recherches de documents au sein d'un catalogue.
+                            
+                            <h4 class="card-title fw-bold text-dark mb-3">🏨 Gestion des salariés de l'hôtel Chambord</h4>
+                            
+                            <p class="card-text text-secondary mb-3">
+                                <strong>Objectif :</strong> Développer une application web en PHP, connectée à une base de données MySQL, permettant de gérer les salariés d'un hôtel fictif (affichage, statistiques, opérations CRUD).
                             </p>
-                            <div class="mb-3">
-                                <span class="badge text-bg-outline border border-secondary text-dark">C#</span>
-                                <span class="badge text-bg-outline border border-secondary text-dark">POO</span>
-                                <span class="badge text-bg-outline border border-secondary text-dark">Git</span>
-                            </div>
-                            <a href="#" class="btn btn-outline-primary btn-sm mt-auto"><i class="bi bi-file-earmark-pdf me-1"></i>Voir la fiche TP</a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- TP 2 SIO1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0 bg-light">
-                        <div class="card-body d-flex flex-column">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <span class="badge bg-primary">Base de Données</span>
-                                <small class="text-muted"><i class="bi bi-calendar3"></i> Semestre 1</small>
-                            </div>
-                            <h5 class="card-title fw-bold">Modélisation BDD SQL</h5>
-                            <p class="card-text text-secondary flex-grow-1">
-                                Analyse des besoins, création du Modèle Conceptuel des Données (MCD) et écriture du script SQL de création et d'insertion (LDD/LMD).
-                            </p>
                             <div class="mb-3">
-                                <span class="badge text-bg-outline border border-secondary text-dark">MySQL</span>
-                                <span class="badge text-bg-outline border border-secondary text-dark">MCD/MLD</span>
-                                <span class="badge text-bg-outline border border-secondary text-dark">phpMyAdmin</span>
+                                <h6 class="fw-bold text-dark"><i class="bi bi-check2-circle me-1 text-success"></i> Ce qui a été réalisé :</h6>
+                                <ul class="small text-secondary ps-3 mb-0">
+                                    <li>Connexion sécurisée PDO (requêtes préparées, gestion des erreurs)</li>
+                                    <li>Architecture modulaire (séparation de la logique métier et de l'affichage)</li>
+                                    <li>Affichage de la liste des salariés sous forme de tableau Bootstrap</li>
+                                    <li>Calculs statistiques (effectifs, salaires moyen/min/max, répartition par service via <code>COUNT</code>, <code>AVG</code>, <code>GROUP BY</code>)</li>
+                                    <li>Interface CRUD complète (Ajout, Modification, Suppression via formulaires)</li>
+                                    <li>Implémentation du pattern <strong>PRG (Post/Redirect/Get)</strong> pour éviter la duplication des données</li>
+                                </ul>
                             </div>
-                            <a href="#" class="btn btn-outline-primary btn-sm mt-auto"><i class="bi bi-file-earmark-pdf me-1"></i>Voir la fiche TP</a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- TP 3 SIO1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0 bg-light">
-                        <div class="card-body d-flex flex-column">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <span class="badge bg-success">Développement Web</span>
-                                <small class="text-muted"><i class="bi bi-calendar3"></i> Semestre 2</small>
-                            </div>
-                            <h5 class="card-title fw-bold">Site Web Dynamique en PHP</h5>
-                            <p class="card-text text-secondary flex-grow-1">
-                                Développer un portail web dynamique avec espace d'authentification utilisateur et gestion CRUD complète reliée à une base de données MySQL.
-                            </p>
                             <div class="mb-3">
                                 <span class="badge text-bg-outline border border-secondary text-dark">PHP</span>
-                                <span class="badge text-bg-outline border border-secondary text-dark">HTML/CSS</span>
+                                <span class="badge text-bg-outline border border-secondary text-dark">MySQL</span>
+                                <span class="badge text-bg-outline border border-secondary text-dark">PDO</span>
+                                <span class="badge text-bg-outline border border-secondary text-dark">HTML / CSS</span>
                                 <span class="badge text-bg-outline border border-secondary text-dark">Bootstrap</span>
                             </div>
-                            <a href="#" class="btn btn-outline-primary btn-sm mt-auto"><i class="bi bi-file-earmark-pdf me-1"></i>Voir la fiche TP</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- SECTIONS SECONDE ANNÉE -->
-        <section class="mb-5">
-            <h2 class="text-primary border-bottom border-2 pb-2 mb-4">
-                <i class="bi bi-2-circle me-2"></i>Seconde année de BTS SIO
-            </h2>
-
-            <div class="row g-4">
-                <!-- TP 1 SIO2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0 bg-light">
-                        <div class="card-body d-flex flex-column">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <span class="badge bg-warning text-dark">Framework Web</span>
-                                <small class="text-muted"><i class="bi bi-calendar3"></i> Semestre 3</small>
+                            <div class="mt-auto pt-2 border-top">
+                                <a href="https://github.com/adam0-00/Ap_CHAMBORD" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-sm">
+                                    <i class="bi bi-github me-1"></i> Code source GitHub
+                                </a>
                             </div>
-                            <h5 class="card-title fw-bold">Application Web MVC</h5>
-                            <p class="card-text text-secondary flex-grow-1">
-                                Structuration d'une application professionnelle basée sur l'architecture MVC (Modèle-Vue-Contrôleur) intégrant un système de composants et la gestion d'API.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge text-bg-outline border border-secondary text-dark">Symfony / Laravel</span>
-                                <span class="badge text-bg-outline border border-secondary text-dark">MVC</span>
-                                <span class="badge text-bg-outline border border-secondary text-dark">ORM Doctrine</span>
-                            </div>
-                            <a href="#" class="btn btn-outline-primary btn-sm mt-auto"><i class="bi bi-file-earmark-pdf me-1"></i>Voir la fiche TP</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- TP 2 SIO2 -->
-                <div class="col-md-6 col-lg-4">
+                <!-- PROJET 2 : MOVIEDB -->
+                <div class="col-lg-6">
                     <div class="card h-100 shadow-sm border-0 bg-light">
                         <div class="card-body d-flex flex-column">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <span class="badge bg-info text-dark">Application Mobile</span>
-                                <small class="text-muted"><i class="bi bi-calendar3"></i> Semestre 3</small>
+                                <span class="badge bg-success"><i class="bi bi-film me-1"></i> API REST & Web</span>
+                                <small class="text-muted"><i class="bi bi-folder-check"></i> Projet 2</small>
                             </div>
-                            <h5 class="card-title fw-bold">Application Mobile Native / Hybride</h5>
-                            <p class="card-text text-secondary flex-grow-1">
-                                Développement d'une application mobile multiplateforme consommant une API REST distante pour l'affichage de données en temps réel.
+                            
+                            <h4 class="card-title fw-bold text-dark mb-3">🎬 MovieDB (utilisation d'une API REST)</h4>
+                            
+                            <p class="card-text text-secondary mb-3">
+                                <strong>Objectif :</strong> Créer une interface web permettant de consulter les films populaires, les mieux notés, les genres, les détails d'un film et les acteurs via l'API REST de TMDB (The Movie Database).
                             </p>
+
                             <div class="mb-3">
-                                <span class="badge text-bg-outline border border-secondary text-dark">Flutter / Java</span>
-                                <span class="badge text-bg-outline border border-secondary text-dark">API REST</span>
+                                <h6 class="fw-bold text-dark"><i class="bi bi-check2-circle me-1 text-success"></i> Ce qui a été réalisé :</h6>
+                                <ul class="small text-secondary ps-3 mb-0">
+                                    <li>Consommation de l'API TMDB via des requêtes HTTP GET (ex: fonction <code>popularMovies()</code>)</li>
+                                    <li>Conversion et traitement de la réponse JSON en tableau PHP avec <code>json_decode()</code></li>
+                                    <li>Galerie de cartes Bootstrap dynamiques pour l'affichage des films (affiches + titres)</li>
+                                    <li>Mise en place d'un système de recherche et de filtres par genre et par acteur</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-3">
+                                <span class="badge text-bg-outline border border-secondary text-dark">PHP</span>
+                                <span class="badge text-bg-outline border border-secondary text-dark">API REST (TMDB)</span>
                                 <span class="badge text-bg-outline border border-secondary text-dark">JSON</span>
+                                <span class="badge text-bg-outline border border-secondary text-dark">Bootstrap</span>
                             </div>
-                            <a href="#" class="btn btn-outline-primary btn-sm mt-auto"><i class="bi bi-file-earmark-pdf me-1"></i>Voir la fiche TP</a>
+
+                            <div class="mt-auto pt-2 border-top">
+                                <button class="btn btn-sm btn-outline-secondary" disabled>
+                                    <i class="bi bi-code-slash me-1"></i> Projet API REST
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- TP 3 SIO2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-sm border-0 bg-light">
-                        <div class="card-body d-flex flex-column">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <span class="badge bg-danger">Cybersécurité & Tests</span>
-                                <small class="text-muted"><i class="bi bi-calendar3"></i> Semestre 4</small>
-                            </div>
-                            <h5 class="card-title fw-bold">Audit & Sécurisation</h5>
-                            <p class="card-text text-secondary flex-grow-1">
-                                Mise en place de tests unitaires, correction de failles de sécurité courantes (injections SQL, XSS) et mise en œuvre des bonnes pratiques de hachage.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge text-bg-outline border border-secondary text-dark">PHPUnit / NUnit</span>
-                                <span class="badge text-bg-outline border border-secondary text-dark">OWASP</span>
-                                <span class="badge text-bg-outline border border-secondary text-dark">Bcrypt</span>
-                            </div>
-                            <a href="#" class="btn btn-outline-primary btn-sm mt-auto"><i class="bi bi-file-earmark-pdf me-1"></i>Voir la fiche TP</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
